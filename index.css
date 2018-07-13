@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1000px;
+    background-image: url(./img/bg.jpg);
+    background-size: 100% 100%;
+}
+
+.wrapper .startBtn{
+    position: absolute;
+    left: 50px;
+    width: 170px; 
+    height: 140px; 
+    background-image: url(./img/startGame.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.wrapper .flagBox {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 200px;
+    height: 50px;
+    margin-left: -100px;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.wrapper .box {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    margin-left: -250px;
+    transform: perspective(800px) rotateX(45deg);
+    border-left: 1px solid #b25f27;
+    border-top: 1px solid #b25f27;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.wrapper .box .block{
+    width: 49px;
+    height: 49px;
+    border-right: 1px solid #b25f27;
+    border-bottom: 1px solid #b25f27;
+    float: left;
+    background-image: url(./img/cao.jpg);
+    box-shadow: 0 0 4px #333 inset;
+}
+.wrapper .box .num{
+    background: #ecd0a1;
+    line-height: 49px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.wrapper .box .flag{
+    background-image: url(./img/hongqi.jpg);
+    background-size: 100% 100%;
+}
+.wrapper .alertBox {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+.wrapper .alertBox .alertImg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 600px;
+    height: 400px;
+    background-size: 100% 100%;
+    border-radius: 20px;
+    /* background-image: url(img/success.png); */
+}
+.wrapper .alertBox .alertImg .close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background: url(./img/closeBtn.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+}
